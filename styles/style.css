@@ -1,0 +1,114 @@
+/* color bank */
+html {
+  --header-blue: #1692ff;
+  --white: white;
+  --bg-color: rgb(239, 241, 243);
+  --footer-color: rgb(166, 206, 219);
+}
+
+
+/* classes */
+.main-section {
+  vertical-align: center;
+  width: 88vw;
+  height: 100vh;
+  display: grid;
+  grid-template: 100px 20px auto 50px / 1fr 1fr 1fr 1fr;
+}
+
+.header {
+  background-color: var(--header-blue);
+  text-align: center;
+}
+
+.logo1 {
+  font-family:Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: var(--white);
+}
+
+.nav {
+  background-color: var(--header-blue);
+}
+
+.main {
+  background-color: var(--white);
+}
+
+.footer {
+  background-color: var(--footer-color);
+}
+
+/* specific element parameters */
+html {
+  display: table;
+  margin: auto;
+  background-color: var(--bg-color);
+}
+
+header {
+  grid-column: 1 / 5;
+}
+
+nav{
+  grid-column: 1 / 5;
+  grid-row: 2 / 3;
+  position: relative;
+}
+
+nav ul {
+  position: absolute;
+  bottom: 0px;
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+  color: var(--white);
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 35px;
+}
+
+nav ul li a:hover {
+  color: var(--header-blue);
+  background-color: var(--white);
+}
+
+nav ul li a.active {
+  color: var(--header-blue);
+  background-color: var(--white);
+}
+
+body{
+  margin-left: 50px;
+  margin-left: 50px;
+  border: 0;
+  margin-top: 0
+}
+
+main {
+  grid-row: 3 / 4;
+  grid-column: 1 / 5;
+}
+
+footer {
+  grid-row: 4 / 5;
+  grid-column: 1 / 5;
+}
+
+footer div {
+  position: absolute;
+  margin-left: 10px;
+  bottom: 5px;
+  color: var(--white)
+}
+
