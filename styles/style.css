@@ -6,9 +6,12 @@ html {
   --footer-color: rgb(166, 206, 219);
 }
 
+/* IDs */
+
+
 
 /* classes */
-.main-section {
+.main-body {
   vertical-align: center;
   width: 90vw;
   height: 100vh;
@@ -35,6 +38,10 @@ html {
 
 .header-social-btn path {
   fill: var(--white);
+}
+
+.header-social-btn:hover path {
+  fill:#e3fbff;
 }
 
 .social-btn-arrangement {
@@ -96,7 +103,7 @@ html {
   text-align: center;
 }
 
-.main {
+.main-section {
   background-color: var(--white);
 }
 
@@ -148,8 +155,6 @@ nav ul li a.active {
 }
 
 body{
-  /* margin-left: 50px; */
-  /* margin-left: 50px; */
   border: 0;
   margin-top: 0
 }
@@ -165,9 +170,9 @@ footer {
 }
 
 footer div {
-  position: absolute;
+  display: inline-block;
   margin-left: 10px;
-  bottom: 5px;
+  margin-top: 25px;
   color: var(--white)
 }
 
