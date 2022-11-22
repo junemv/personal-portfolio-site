@@ -4,6 +4,9 @@ html {
   --white: white;
   --bg-color: rgb(239, 241, 243);
   --footer-color: rgb(166, 206, 219);
+  --paragraph-h: rgb(166, 206, 219);
+  --paragraph-t: gray;
+  --paragraph-h2: rgb(102, 126, 169);
 }
 
 /* IDs */
@@ -11,6 +14,34 @@ html {
 
 
 /* classes */
+.general-header {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  color: var(--header-blue);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.general-description {
+  color: var(--paragraph-t);
+  text-overflow: hidden;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  letter-spacing: 1pt;
+  word-spacing: 2pt;
+  line-height: 1.5;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.paragraph-header {
+  font-size: xx-large;
+  color: var(--paragraph-h);
+  margin: 0;
+  white-space: nowrap;
+}
+
 .main-body {
   vertical-align: center;
   width: 90vw;
@@ -21,6 +52,7 @@ html {
 
 .header {
   background-color: var(--header-blue);
+  white-space: nowrap;
 }
 
 .active-section {
@@ -34,6 +66,7 @@ html {
   margin-left: 10px;
   display: inline-block;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .header-social-btn path {
@@ -41,7 +74,8 @@ html {
 }
 
 .header-social-btn:hover path {
-  fill:#e3fbff;
+  transform-origin: center;
+  scale: 115%;
 }
 
 .social-btn-arrangement {
@@ -60,6 +94,11 @@ html {
 
 .footer-social-btn path {
   fill: var(--white);
+}
+
+.footer-social-btn:hover path{
+transform-origin: center;
+scale: 115%;
 }
 
 .social-btn-arrangement-footer {
@@ -101,6 +140,7 @@ html {
   bottom: 0px;
   padding: 0;
   text-align: center;
+  white-space: nowrap;
 }
 
 .main-section {
