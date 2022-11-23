@@ -1,6 +1,15 @@
+/* IDs */
+/* #card-header {
+  grid-column: 3 / 4;
+  grid-row: 1/2;
+} */
+
 /* classes */
 .projects-contents {
-  padding: 7%;
+  padding-top: 5%;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-bottom: 7%;
   margin-left: 2.5%;
   margin-right: 2.5%;
   /* border: 2px pink; */
@@ -8,8 +17,9 @@
 
 .project-card {
   display: grid;
-  grid-template: 210px 15px 40px/ 250px 3fr;
+  grid-template: 10px 200px 15px 40px / 250px 2fr 1fr;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 50px;
   /* border: 2px solid pink; */
 }
 
@@ -19,16 +29,35 @@
 
 .project-image {
   grid-column: 1 / 2;
-  grid-row: 1 / 4;
+  grid-row: 1 / 2;
   height: 265px;
   width: 250px
 }
 
+.project-header {
+  font-size: xx-large;
+  font-weight: bold;
+  color: var(--paragraph-h);
+  margin: 0;
+  padding-bottom: 0;
+  white-space: nowrap;
+}
+
+.project-lang-name {
+  /* grid-column: 2 / 4; */
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  color: silver;
+}
+
 .project-description {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
+  display: grid;
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
   padding: 15px;
   margin-top: 0;
+  align-items: center;
   text-overflow: ellipsis;
   overflow: hidden;
   align-content: center;
@@ -38,6 +67,7 @@
   word-spacing: 2pt;
   line-height: 1.5;
   color: var(--paragraph-t);
+  /* background-color: aquamarine; */
   /* border: 2px pink; */
 }
 
@@ -49,8 +79,8 @@
   display: grid;
   overflow: hidden;
   white-space: nowrap;
-  grid-column: 2 / 3;
-  grid-row: 3 / 4;
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
   background-color: var(--header-blue);
   align-items: center;
   justify-items: center;
@@ -63,4 +93,7 @@
 }
 
 /* specific element parameters */
+a {
+  text-decoration: none;
+}
 

@@ -11,12 +11,10 @@ html {
 
 /* IDs */
 
-
-
 /* classes */
 .general-header {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: x-large;
+  font-size: 30pt;
   color: var(--header-blue);
   margin: 0;
   white-space: nowrap;
@@ -27,7 +25,7 @@ html {
   text-overflow: hidden;
   overflow: hidden;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: small;
+  font-size: large;
   letter-spacing: 1pt;
   word-spacing: 2pt;
   line-height: 1.5;
@@ -39,6 +37,7 @@ html {
   font-size: xx-large;
   color: var(--paragraph-h);
   margin: 0;
+  padding-bottom: 0;
   white-space: nowrap;
 }
 
