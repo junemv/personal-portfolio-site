@@ -44,7 +44,6 @@
 }
 
 .project-lang-name {
-  /* grid-column: 2 / 4; */
   margin-top: 0;
   margin-bottom: 10px;
   text-align: left;
@@ -90,10 +89,5 @@
   text-align: center;
   color: var(--white);
   letter-spacing: 1pt;
-}
-
-/* specific element parameters */
-a {
-  text-decoration: none;
 }
 
