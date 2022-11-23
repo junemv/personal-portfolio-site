@@ -7,6 +7,7 @@ html {
   --paragraph-h: rgb(166, 206, 219);
   --paragraph-t: gray;
   --paragraph-h2: rgb(102, 126, 169);
+  --sub-header: silver;
 }
 
 /* IDs */
