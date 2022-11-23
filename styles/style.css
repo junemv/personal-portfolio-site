@@ -148,6 +148,7 @@ scale: 115%;
 }
 
 .footer {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--footer-color);
 }
 
